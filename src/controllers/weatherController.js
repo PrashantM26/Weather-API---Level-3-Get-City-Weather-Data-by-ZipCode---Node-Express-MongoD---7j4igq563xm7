@@ -55,8 +55,8 @@ async function getWeatherDataByZipCode(zipCode) {
     return ele.zipCode === zipCode;
   })
 
-  if(searchedDetails){
-    return seachedDetails.forecast;
+  if(searchedCity){
+    return seachedCity.forecast;
   } else {
     throw new Error("ZipCode not found");
   }
