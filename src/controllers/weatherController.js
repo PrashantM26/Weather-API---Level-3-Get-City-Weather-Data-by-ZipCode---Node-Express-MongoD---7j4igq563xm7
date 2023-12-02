@@ -50,6 +50,14 @@ async function saveDataToDatabase(data) {
 // Level 3: Get City Weather Data by ZipCode
 async function getWeatherDataByZipCode(zipCode) {
    // TODO: Implement this function
+  const cityDetails = await getDataFromDatabase();
+  const searchedCity = cityDetails.find((zip) => {
+    return cityDetails.zip === zipCode;
+  })
+
+  if(searchedDetails){
+    return 
+  }
 }
 
 
